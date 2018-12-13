@@ -220,10 +220,6 @@ var data = {
       "id": 54,
       "name": "Dummy"
     },
-    {
-      "id": 55,
-      "name": "Dummy"
-    },
   ],
   "links": [
     {
@@ -253,11 +249,11 @@ var data = {
     },
     {
       "source": 30,
-      "target": 52,
+      "target": 51,
       "value": "5.2"
     },
     {
-      "source": 52,
+      "source": 51,
       "target": 39,
       "value": "5.2"
     },
@@ -538,31 +534,31 @@ var data = {
     },
     {
       "source": 34,
-      "target": 53,
+      "target": 52,
       "value": "1.7"
     },
     {
-      "source": 53,
+      "source": 52,
       "target": 38,
       "value": "1.7"
+    },
+    {
+      "source": 31,
+      "target": 46,
+      "value": "5.1"
+    },
+    {
+      "source": 46,
+      "target": 38,
+      "value": "5.1"
     },
     {
       "source": 31,
       "target": 47,
-      "value": "5.1"
-    },
-    {
-      "source": 47,
-      "target": 38,
-      "value": "5.1"
-    },
-    {
-      "source": 31,
-      "target": 48,
       "value": "0.3"
     },
     {
-      "source": 48,
+      "source": 47,
       "target": 39,
       "value": "0.3"
     },
@@ -583,21 +579,21 @@ var data = {
     },
     {
       "source": 33,
-      "target": 50,
+      "target": 49,
       "value": "1.4"
     },
     {
-      "source": 50,
+      "source": 49,
       "target": 38,
       "value": "1.4"
     },
     {
       "source": 33,
-      "target": 51,
+      "target": 50,
       "value": "0.3"
     },
     {
-      "source": 51,
+      "source": 50,
       "target": 39,
       "value": "0.3"
     },
@@ -648,11 +644,11 @@ var data = {
     },
     {
       "source": 32,
-      "target": 49,
+      "target": 48,
       "value": "1.5"
     },
     {
-      "source": 49,
+      "source": 48,
       "target": 38,
       "value": "1.5"
     },
@@ -708,29 +704,29 @@ var data = {
     },
     {
       "source": 35,
-      "target": 54,
+      "target": 53,
       "value": "1.2"
     },
     {
-      "source": 54,
+      "source": 53,
       "target": 38,
       "value": "1.2"
     },
     {
       "source": 35,
-      "target": 55,
+      "target": 54,
       "value": "0.3"
     },
     {
-      "source": 55,
+      "source": 54,
       "target": 39,
       "value": "0.3"
     }
   ],
-  rankSets: [
+  "rankSets": [
     {"type": "same", "nodes": [0, 1, 4, 5, 6]},
-    {"type": "same", "nodes": [2, 3, 7, 8, 9, 27, 28, 30, 31, 32, 33, 34, 35]},
-    {"type": "same", "nodes": [10, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29]},
+    {"type": "same", "nodes": [2, 3, 7, 8, 9, 27, 28, 30, 31, 32, 33, 34, 35, 42, 43, 44, 45]},
+    {"type": "same", "nodes": [10, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 40, 41, 46, 47, 48, 49, 50, 51, 52, 53, 54]},
     {"type": "same", "nodes": [36, 37, 38, 39]}
   ]
 }
