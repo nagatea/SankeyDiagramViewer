@@ -1,123 +1,163 @@
 var data = {
   "nodes": [
     {
+      "id": 0,
       "name": "Energy"
     },
     {
+      "id": 1,
       "name": "Industrial Processes"
     },
     {
+      "id": 2,
       "name": "Electricity and heat"
     },
     {
+      "id": 3,
       "name": "Industry"
     },
     {
+      "id": 4,
       "name": "Land Use Change"
     },
     {
+      "id": 5,
       "name": "Agriculture"
     },
     {
+      "id": 6,
       "name": "Waste"
     },
     {
+      "id": 7,
       "name": "Transportation"
     },
     {
+      "id": 8,
       "name": "Other Fuel Combustion"
     },
     {
+      "id": 9,
       "name": "Fugitive Emissions"
     },
     {
+      "id": 10,
       "name": "Road"
     },
     {
+      "id": 11,
       "name": "Air"
     },
     {
+      "id": 12,
       "name": "Rail - Ship and Other Transport"
     },
     {
+      "id": 13,
       "name": "Residential Buildings"
     },
     {
+      "id": 14,
       "name": "Commercial Buildings"
     },
     {
+      "id": 15,
       "name": "Unallocated Fuel Combustion"
     },
     {
+      "id": 16,
       "name": "Iron and Steel"
     },
     {
+      "id": 17,
       "name": "Aluminium Non-Ferrous Metals"
     },
     {
+      "id": 18,
       "name": "Machinery"
     },
     {
+      "id": 19,
       "name": "Pulp - Paper and Printing"
     },
     {
+      "id": 20,
       "name": "Food and Tobacco"
     },
     {
+      "id": 21,
       "name": "Chemicals"
     },
     {
+      "id": 22,
       "name": "Cement"
     },
     {
+      "id": 23,
       "name": "Other Industry"
     },
     {
+      "id": 24,
       "name": "T and D Losses"
     },
     {
+      "id": 25,
       "name": "Coal Mining"
     },
     {
+      "id": 26,
       "name": "Oil and Gas Processing"
     },
     {
+      "id": 27,
       "name": "Deforestation"
     },
     {
+      "id": 28,
       "name": "Harvest / Management"
     },
     {
+      "id": 29,
       "name": "Agricultural Energy Use"
     },
     {
+      "id": 30,
       "name": "Agriculture Soils"
     },
     {
+      "id": 31,
       "name": "Livestock and Manure"
     },
     {
+      "id": 32,
       "name": "Rice Cultivation"
     },
     {
+      "id": 33,
       "name": "Other Agriculture"
     },
     {
+      "id": 34,
       "name": "Landfills"
     },
     {
+      "id": 35,
       "name": "Waste water - Other Waste"
     },
     {
+      "id": 36,
       "name": "Carbon Dioxide"
     },
     {
+      "id": 37,
       "name": "HFCs - PFCs"
     },
     {
+      "id": 38,
       "name": "Methane"
     },
     {
+      "id": 39,
       "name": "Nitrous Oxide"
     }
   ],
@@ -547,5 +587,11 @@ var data = {
       "target": 39,
       "value": "0.3"
     }
+  ],
+  rankSets: [
+    {"type": "same", "nodes": [0, 1, 4, 5, 6]},
+    {"type": "same", "nodes": [2, 3, 7, 8, 9, 27, 28, 30, 31, 32, 33, 34, 35]},
+    {"type": "same", "nodes": [10, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29]},
+    {"type": "same", "nodes": [36, 37, 38, 39]}
   ]
 }

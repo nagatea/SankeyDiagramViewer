@@ -19,7 +19,7 @@ let sankey = d3.sankey()
 
 let path = sankey.link();
 
-let energy = data;
+let energy = data; //data.jsのdata
 
 sankey
     .nodes(energy.nodes)
@@ -35,7 +35,7 @@ let link = svg.append("g").selectAll(".link")
     .sort(function(a, b) { return b.dy - a.dy; });
 
 link.append("title")
-    .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+    .text(function(d) { return "[" + d.source.id + "]" + d.source.name + " → " + "[" + d.target.id + "]" + d.target.name + "\n" + format(d.value); });
 
 let node = svg.append("g").selectAll(".node")
     .data(energy.nodes)
@@ -53,7 +53,7 @@ node.append("rect")
     .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
     .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
   .append("title")
-    .text(function(d) { return d.name + "\n" + format(d.value); });
+    .text(function(d) { return "[" + d.id + "]" + d.name + "\n" + format(d.value); });
 
 node.append("text")
     .attr("x", -6)
@@ -61,7 +61,7 @@ node.append("text")
     .attr("dy", ".35em")
     .attr("text-anchor", "end")
     .attr("transform", null)
-    .text(function(d) { return d.name; })
+    .text(function(d) { return "[" + d.id + "]" + d.name; })
   .filter(function(d) { return d.x < width / 2; })
     .attr("x", 6 + sankey.nodeWidth())
     .attr("text-anchor", "start");
