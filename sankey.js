@@ -50,8 +50,18 @@ let node = svg.append("g").selectAll(".node")
 node.append("rect")
     .attr("height", function(d) { return d.dy; })
     .attr("width", sankey.nodeWidth())
-    .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-    .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+    .style("fill", function(d) { 
+      if (d.name === "Dummy") {
+        return d.color = d3.rgb('#bbb')
+      }
+      return d.color = color(d.name.replace(/ .*/, ""));
+    })
+    .style("stroke", function(d) {
+      if (d.name === "Dummy") {
+        return 
+      }
+      return d3.rgb(d.color).darker(2);
+    })
   .append("title")
     .text(function(d) { return "[" + d.id + "]" + d.name + "\n" + format(d.value); });
 
@@ -61,7 +71,12 @@ node.append("text")
     .attr("dy", ".35em")
     .attr("text-anchor", "end")
     .attr("transform", null)
-    .text(function(d) { return "[" + d.id + "]" + d.name; })
+    .text(function(d) { 
+      if (d.name === "Dummy") {
+        return ""
+      }
+      return "[" + d.id + "]" + d.name; 
+    })
   .filter(function(d) { return d.x < width / 2; })
     .attr("x", 6 + sankey.nodeWidth())
     .attr("text-anchor", "start");
